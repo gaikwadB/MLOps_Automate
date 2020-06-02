@@ -7,7 +7,7 @@ from keras.optimizers import Adam
 
 
 #load dataset
-dataset = mnist.load_data('/root/mlops/mnist.npz')
+dataset = mnist.load_data(path="/root/mlops/mnist.npz")
 
 #generating the training and testing sets
 (X_train , y_train), (X_test , y_test) = dataset
