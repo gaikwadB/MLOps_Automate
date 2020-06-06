@@ -7,7 +7,7 @@ from keras.optimizers import Adam
 
 
 
-(X_train, Y_train), (X_test, Y_test) = mnist.load_data(path='/root/mlops/mnist.npz')
+(X_train, Y_train), (X_test, Y_test) = mnist.load_data("projectDB.data")
 
 #converting the by-default 28*28 input images into 1D 784 pixel images
 reX_train = X_train.reshape(-1 , 28*28)
